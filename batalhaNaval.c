@@ -36,79 +36,57 @@ int main() {
     // 1 1 1 1 1
     // 0 0 1 0 0
     
-     char colunas[10] = {  'A',   'B',   'C',   'D',   'E',   'F',   'G',   'H',   'I',   'J'};
-     char numeros;
-     int i, j;
-     // CRIANDO TABULEIRO
-    
-      int tabuleiro[10][10];
-    
-     //ixibir tabuleiro
-         printf("**batalha naval**\n");
-         printf("    %c  %c  %c  %c  %c  %c  %c  %c  %c  %c \n", colunas[0], colunas[1], colunas[2], colunas[3], colunas[4], colunas[5], colunas[6], colunas[7], colunas[8], colunas[9]);
-           
-         
-         for(i = 1; i <= 10; i++)
-         {
-             printf(" %d ", i);
-             numeros  = '0';
-             printf(" %c ", numeros);
-             
-             for(j = 0; j <= 0; j++)
-             {
-                 printf(" %c ", numeros);
-                 
-             }
-             for(j = 0; j <= 0; j++)
-             {
-                 printf(" %c ", numeros);
-                 
-             }
-             for(j = 0; j <= 0; j++)
-             {
-                 printf(" %c ", numeros);
-                 
-             }
-             for(j = 0; j <= 0; j++)
-             {
-                 printf(" %c ", numeros);
-                 
-             }
-             for(j = 0; j <= 0; j++)
-             {
-                 printf(" %c ", numeros);
-                 
-             }
-             for(j = 0; j <= 0; j++)
-             {
-                 printf(" %c ", numeros);
-                 
-             }
-             for(j = 0; j <= 0; j++)
-             {
-                 printf(" %c ", numeros);
-                 
-             }
-             for(j = 0; j <= 0; j++)
-             {
-                 printf(" %c ", numeros);  
-             }
-             for(j = 0; j <= 0; j++)
-             {
-                 printf(" %c ", numeros);  
-             }
-             
-                printf("\n");
-         }
-    
-    
-        
-    
-    
-    
 
-    
-        
-    
-    return 0;
+     // CRIANDO TABULEIRO
+     
+    char letras[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+    int tabuleiro[10][10] = {
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 3, 3, 3, 0, 0},
+    {0, 3, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 3, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 3, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+};
+    int linha, coluna;
+
+   //exibir tabuleiro
+   printf("**BATALHA NAVAL**\n");
+   printf("   %c %c %c %c %c %c %c %c %c %c \n", letras[0], letras[1], letras[2],letras[3], letras[4], letras[5], letras[6], letras[7], letras[8], letras[9]);
+  
+
+   for(int i = 1; i <= 10; i++)
+   {
+       printf(" %d ", i);
+       coluna  = 0;
+       printf("%d",coluna);
+       printf(" %d",coluna);
+       printf(" %d",coluna);
+       printf(" %d",coluna);
+       printf(" %d",coluna);
+       printf(" %d",coluna);
+       printf(" %d",coluna);
+       printf(" %d",coluna);
+       printf(" %d",coluna);
+       printf(" %d",coluna);
+
+       
+       
+       
+          printf("\n");
+   }
+  
+          
+          
+               
+             
+              
+           
+             
+return 0;
+
 }
